@@ -33,8 +33,8 @@ Esimerkki kuvan lisäämisestä:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
+- **Julkaistu sovellus:** [https://petelf-l4u.github.io/Projekti_1_DOM_Skriptaus/]
+- **GitHub-repositorio:** [https://github.com/PetElf-L4U/Projekti_1_DOM_Skriptaus]
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
 ## Tietoja sovelluksesta
