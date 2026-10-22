@@ -1,0 +1,329 @@
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  margin: 1em;
+}
+/* Perus nappulamuotoilu - kursorin muutos kaikkiin nappuloihin */
+button {
+  cursor: pointer;
+}
+
+/* Piilotus-luokka lomakevalikkoa varten. */
+.hidden {
+  display: none;
+}
+
+/* ---------------------- 1. HEADER (Sivun yläpalkki) ---------------------- */
+
+#body-header {
+  color: white;
+  display: flex;
+  background-color:#3f88c5;
+  padding: 1em 2em;
+  justify-content: space-between;
+  border: 2px solid #333333;
+}
+
+#new-list-menu {
+  background-color:white;
+  border: 3px solid white;
+  border-radius: 1em;
+  color:#3f88c5;
+  padding:1em 2em;
+  font-size: 1.3em;
+}
+ 
+#new-list-menu:active {
+  color: black;
+  background-color: lightgrey;
+  transition-duration: 0.2s;
+  border: 3px solid white;
+}
+
+
+/* ---------------------- 2. UUSI LISTA LOMAKE (Form) ---------------------- */
+
+.form-container {
+  color:#333333;
+  display:flex;
+  border-bottom: 2px solid #333333;
+}
+
+.form-card {
+  background-color:#f4f4f4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0em 0.3em 1em 0.3em;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-card h3 {
+  color: #3f88c5;
+  font-size: 1.5em;
+} 
+
+form {
+  display:flex;
+  flex-direction: column;
+}
+
+.form-group {
+  padding: 0.4em 0em;
+}
+
+input {
+  padding: 8px;
+  background-color: #dbdbdb;
+  border: 1px solid #b5b5b5; 
+  border-radius: 8px;
+  color: black;
+}
+
+.form-container button {
+  background-color: #3f88c5;
+  padding: 8px 12px;
+  margin: 4px;
+  border: 1px solid #b5b5b5;
+  border-radius: 2em;
+  color: white;
+  font-size: 1em;
+}
+
+.form-container button:hover {
+  background-color: #888888;
+  color: black;
+  transition-duration: 0.2s;
+}
+
+/* Esikatselu */
+.preview-zone {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid #b5b5b5;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.preview-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #888888;
+  margin: 0 0 0.5em 0;
+}
+
+
+/* ---------------------- 3. MAIN - LISTAT ---------------------- */
+/* Alue listoille */
+main {
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Container listalle */
+.list-container {
+  width: 400px;
+  background-color: white;
+  border: 2px solid #333333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------- LISTAN OTSIKKO RIVI ---------------------- */
+/* Yleinen muotoilu */
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #dbdbdb;
+  border-bottom: 2px solid #333333;
+}
+/* Minimointi nappulan ja "+" nappulan div-elementti */
+.header-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+/* Tekstin muotoilu */
+.list-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #3f88c5;
+  font-weight: bold;
+}
+
+/* Yleiset ikonipainikkeet headerissa */
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Nappulat */
+.btn-minimize {
+  color: #888888;
+  font-size: 0.8rem;
+}
+
+.btn-add {
+  font-size: 1.5rem;
+  color: #3f88c5;
+}
+
+.btn-close {
+  font-size: 1.5rem;
+}
+
+/* ---------------------- LISTAN RIVIT ---------------------- */
+
+/* Listan perusilmeen muotoilu */
+.list-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Listan laatikoiden muotoilu */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+/* Listan tekstin muotoilu */
+.item-name {
+  flex-grow: 1;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* Valinta indikaattori (Tick-nappi) */
+.btn-toggle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #888888;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0;
+}
+
+/* Listan poistonappi (Raksi ympyrässä) */
+.btn-delete {
+  background: none;
+  border: 1px solid maroon; /* Ympyrä */
+  color: #800020; /* Raksin väri */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+/* ---------------------- VALMIIDEN MUOTOILU  ---------------------- */
+
+/* Indikaattorin väri */
+.list-item.completed .btn-toggle {
+  background-color: #3f88c5;
+}
+
+/* harmaa teksti, yliviivaus */
+.list-item.completed .item-name {
+  color:#dbdbdb;
+  text-decoration: line-through;
+}
+
+/* ---------------------- LISTAN FOOTER ---------------------- */
+
+/* Alapalkki */
+.list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+  background-color: #dbdbdb;
+  font-size: 0.9rem;
+}
+
+/* Laskuri */
+.status-counter {
+  color: #333333;
+}
+
+/* Filteri nappuloiden välinen etäisyys */
+.filter-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* Muotoilu filtteri-nappuloille */
+.btn-filter {
+  background-color: #b5b5b5;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #555555;
+}
+
+/* Aktiivinen filtteri-nappula */
+.btn-filter.active {
+  background-color: #3f88c5;
+  color: white;
+}
+
+/* ---------------------- 4. SIVUN ALAPALKKI (Footer) ---------------------- */
+
+.body-footer ul {
+  justify-content: space-evenly;
+  background-color:#3f88c5;
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.body-footer li {
+  margin: 1em;
+  font-size: 0.8rem;
+  color:#dbdbdb;
+}
+
+/* --- VIRHETILANTEET --- */
+
+.invalid {
+    border: 2px solid red;
+}
+
+#errorMessage {
+    color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+

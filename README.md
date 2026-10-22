@@ -1,20 +1,25 @@
 # Projektin nimi
 
-**Tekijä(t):** Kirjoita tähän oma nimesi / tekijöiden nimet
+**Tekijä(t):** Petteri Elf
 
 ## Projektisuunnitelma
 
 ### Projektin idea
 
 Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+Sovelluksella voidaan luoda, muokata ja tarkastella listoja, joiden aiheet ovat vapaavalintaisia. 
+Esimerkiksi kauppalistoja, deadline listoja, bongattuja eläimiä, jne.
+Se on suunnattu itselleni ja kaikille, jotka tarvitsevat muistilistoja.
 
 ### Suunnitellut toiminnot
 
 Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Uusien listojen luominen ja nimeäminen
+- Listojen ja niiden sisällön lisääminen ja poistaminen
+- Listojen tallentaminen
+- Listassa olevien asioiden määrän ilmaisu numeroin
+- Listan sisällön suodattaminen
 
 ### Rautalankamalli / luonnos
 
@@ -22,7 +27,8 @@ Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovell
 
 Esimerkki kuvan lisäämisestä:
 
-![Rautalankamalli](img/wireframe.png)
+![Rautalankamalli](img/Projekti_Konsepti.png)
+
 
 ## Verkkolinkit
 
@@ -32,7 +38,8 @@ Esimerkki kuvan lisäämisestä:
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
+**[Muistilistat]** on verkkosovellus, jolla (olisi pitänyt) voi luoda muistilistoja erilaisiin tarkoituksiin ja teemoihin. Sovelluksessa uusi lista luodaan lomakkeen avulla, joka avataan oikeassa yläkulmassa olevalla painikkeella, jossa määritellään listan otsikko omaan kenttäänsä, sekä listalle merkittävät asiat. Listan sisältö tulee näkyviin esikatselunäkymään lomakkeeseen. Lista luodaan painikkeella. Listan sisältöä voi merkitä valmiiksi vasemassa reunassa olevalla painikkeella, kullakin rivillä, ja poistaa oikealla puolella olevasta punaisesta raksista, rivikohtaisesti. Listassa on myös mahdollisuus luoda uusia rivejä, minimoida lista, tai poistaa se. 
+Listassa on laskin, joka ilmaisee keskeneräiset askareet ja kokonaismäärän lukuna vasemmassa alalaidassa, sekä suodattimet, joilla voi piilottaa tehdyt listan osiot. 
 
 Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
 
@@ -43,7 +50,7 @@ Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
 - JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
+~~- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä~~
 
 ## Sovelluksen käyttö
 
@@ -70,9 +77,7 @@ Esimerkki kuvan lisäämisestä:
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+-Toiminnallisuudet, lomake kentän piilottamista lukuunottamatta jäivät toteuttamatta.
 
 ## Työn jakautuminen
 
@@ -88,22 +93,29 @@ Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
 Pohdi työtäsi ja oppimisprosessiasi.
 
 - Missä onnistuin?
+    Visuaalinen ilme oli mielestäni välttävä.
 - Mikä oli haastavaa?
+    Aikataulutus ja DOM-skriptaus.  
 - Mitä parantaisin, jos aikaa olisi enemmän?
+    Konseptia pitäisi varmaan vähän hioa. Suunnittelisin lomakkeen uusiksi, ja tekisin valmiiksi kaikki toiminnallisuudet, jotka aioin toteuttaa, kuten tehty/poisto/filtteri -napit yms.
 - Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
+    Näiden yhteistoiminnan periaatteet, ja joitakin yksittäisiä niksejä.  
 - Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+    Sisältöä on toki paljon, mutta yleisimpiä menetelmiä voisi opetella vähän enemmän, niinkuin tässä käytiinkin.
+- Oma arvio projektista: **1/10 pistettä**
 
 ## Lähteet ja kiitokset
 
 Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
+  w3schoolsin 
 Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
 
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- [Lähteen tai tutoriaalin nimi]
+- kurssin oppimateriaalit
+- https://www.w3schools.com/
+- [Kuvalähde]
+- Käytetty tekoälytyökalu: Googlen hakukone AI (Gemini)
+  - Miten työkalua käytettiin: Pyysin tekoälyltä apua listan rakenteen suunnitteluun konseptin pohjalta, sekä käytettyjen symboli-koodien selvitykseen, erilaisten koodaus konseptien tarkennuksiin, ja bugien selvittämiseen.
 
   ## Lisenssi
 

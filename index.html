@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Project 1 - DOM-skriptaus</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello world! Test.</h1>
+    <!-- 1. Header - Otsikko, luo uusi lista nappula -->
+    <header id="body-header">
+        <h1>Muistilistat</h1>
+        <button id="new-list-menu">Luo uusi lista</button>
+    </header>
+
+    <!-- 2. Listan luominen - Lomake (form) -->
+    <section class="form-container hidden">
+        <div class="form-card">
+            <h3>Luo uusi lista</h3>
+            <form id="main-list-form">
+
+                <!-- Listan nimi kenttä -->
+                <div class="form-group">
+                    <label for="input-list-name">Listan nimi:</label>
+                    <input type="text" id="input-list-name" placeholder="esim. Kauppalista" required>
+                    <span class="error-message" id="error-list-name"></span>
+                </div>
+
+                <!-- Artikkelin lisäys kenttä -->
+                <div class="form-group">
+                    <label for="input-single-item">Lisää lista-artikkeli:</label>
+                    <div class="inline-input-group">
+                        <input type="text" id="input-single-item" placeholder="esim. Maito">
+                        <button type="button" id="btn-add-item-to-preview">Lisää listalle</button>
+                    </div>
+                    <span class="error-message" id="error-single-item"></span>
+                </div>
+
+
+                <!-- Listan esikatselu -->
+                <div class="preview-zone">
+                    <p class="preview-title">Esikatselu:</p>
+                    <div id="preview-list-container" class="new-list-container hidden">
+                        <header class="list-header">
+                            <h4 id="preview-header-title">Listan nimi</h4>
+                        </header>
+                        <ul class="list-items" id="preview-ul">
+                            <!-- Listan esikatselusisältö näkyy tässä -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Listan koosto nappi -->
+                <button type="submit" id="btn-submit-form">Luo lista</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- 3. Main - luodut listat ilmestyvät tänne -->
+    <main>
+
+        <!-- Pääcontainer listoille -->
+
+        <section class="list-container">
+            <!-- Listan otsikko (Header) -->
+            <header class="list-header">
+                <div class="header-left">
+                    <button class="btn-icon btn-minimize">▼</button>
+                    <button class="btn-icon btn-add">+</button>
+                </div>
+                <h2>Kauppalista</h2>
+                <button class="btn-icon btn-close">×</button>
+            </header>
+
+            <!-- Listan elementit -->
+            <ul class="list-items">
+                <!-- Tehty rivi (maitoa) -->
+                <li class="list-item completed">
+                    <button class="btn-toggle"></button>
+                    <span class="item-name">maitoa</span>
+                    <button class="btn-delete">✕</button>
+                </li>
+
+                <!-- Keskeneräinen rivi (leipää) -->
+                <li class="list-item">
+                    <button class="btn-toggle"></button>
+                    <span class="item-name">leipää</span>
+                    <button class="btn-delete">✕</button>
+                </li>
+
+                <!-- Tehty rivi (pesuainetta) -->
+                <li class="list-item completed">
+                    <button class="btn-toggle"></button>
+                    <span class="item-name">pesuainetta</span>
+                    <button class="btn-delete">✕</button>
+                </li>
+
+                <!-- Keskeneräinen rivi (suklaata) -->
+                <li class="list-item">
+                    <button class="btn-toggle"></button>
+                    <span class="item-name">suklaata</span>
+                    <button class="btn-delete">✕</button>
+                </li>
+
+                <!-- Keskeneräinen rivi (tomaatteja) -->
+                <li class="list-item">
+                    <button class="btn-toggle"></button>
+                    <span class="item-name">tomaatteja</span>
+                    <button class="btn-delete">✕</button>
+                </li>
+            </ul>
+
+            <!-- Listan alapalkki (footer) -->
+            <footer class="list-footer">
+                <div class="status-counter">2/5</div>
+                <div class="filter-buttons">
+                    <button class="btn-filter active">Kaikki</button>
+                    <button class="btn-filter">Vain keskeneräiset</button>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- 4. Sivun Alapalkki (Footer) -->
+    <footer class="body-footer">
+        <ul>
+            <li>
+                Tekijä: Petteri Elf
+            </li>
+            <li>
+                Laurea-ammattikorkeakoulu Web Development 1: Projekti 1 - DOM-skriptaus
+            </li>
+            <li>
+                Copyright 2026
+            </li>
+        </ul>
+    </footer>
+
+
 </body>
+
 </html>
