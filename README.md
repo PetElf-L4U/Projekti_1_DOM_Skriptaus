@@ -1,12 +1,13 @@
 # Projektin nimi
 
-**Tekijä(t):** Petteri Elf
+**Tekijä:** Petteri Elf
 
 ## Projektisuunnitelma
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+- Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+
 Sovelluksella voidaan luoda, muokata ja tarkastella listoja, joiden aiheet ovat vapaavalintaisia. 
 Esimerkiksi kauppalistoja, deadline listoja, bongattuja eläimiä, jne.
 Se on suunnattu itselleni ja kaikille, jotka tarvitsevat muistilistoja.
@@ -49,17 +50,17 @@ Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
 
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
-- JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-~~- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä~~
+- JavaScript – toiminnallisuus, DOM-skriptaus ~~ja lomakkeiden validointi~~
+- ~~localStorage – tietojen tallentaminen selaimeen, jos käytit sitä~~
 
 ## Sovelluksen käyttö
 
 Kirjoita lyhyet käyttöohjeet sovellukselle.
 
 1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+2. ~~Täytä lomakkeen kentät.~~
+3. ~~Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.~~
+4. ~~Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.~~
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -78,15 +79,6 @@ Esimerkki kuvan lisäämisestä:
 ## Tunnetut virheet / puutteet
 
 -Toiminnallisuudet, lomake kentän piilottamista lukuunottamatta jäivät toteuttamatta.
-
-## Työn jakautuminen
-
-*Täytä tämä osio vain, jos teit projektin parityönä.*
-
-Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
-
-- Tekijä 1: ...
-- Tekijä 2: ...
 
 ## Oma arvio ja oppimisen reflektointi
 
@@ -107,7 +99,6 @@ Pohdi työtäsi ja oppimisprosessiasi.
 ## Lähteet ja kiitokset
 
 Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-  w3schoolsin 
 Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
 
 - [Lähteen tai tutoriaalin nimi]
